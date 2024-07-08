@@ -10,4 +10,7 @@ def find_longest_word(filename):
 if __name__ == "__main__":
     filename = 'input.txt'
     longest_word = find_longest_word(filename)
-    print(f"The longest word is: {longest_word}")
+    if longest_word != "File not found.":
+        print(f"The longest word is: {longest_word}")
+    else:
+        print(longest_word)
